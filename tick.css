@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1px;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.cell:hover {
+    background-color: #ddd;
+}
+.x {
+    color: #f00;
+}
+.o {
+    color: #00f;
+}
+.winner {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+}
